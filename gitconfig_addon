@@ -1,8 +1,10 @@
 [alias]
-	lg = log --graph --date=short --format='%C(yellow)%h%C(reset)%C(magenta) [%ad]%C(reset)%C(auto)%d%C(reset) %s%C(cyan) @%an%C(reset)'
-	st = status
-	cm = commit
+	lg3 = log --graph --date=short --format='%C(yellow)%h%C(reset)%C(magenta) [%ad]%C(reset)%C(auto)%d%C(reset) %s%C(cyan) @%an%C(reset)'
 	difff = diff --word-diff
-	today = log --oneline --since='12 hour ago'
+    today = log --oneline --since='12 hour ago'
+    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(normal)%s%C(reset) %C(dim white)%an%C(reset) %C(dim blue)(%ar)%C(reset)' --all
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    lg = !"git lg3"
 [core]
 	quotepath = false
+[user]
