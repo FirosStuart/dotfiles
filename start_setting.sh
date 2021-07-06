@@ -46,3 +46,7 @@ curl -O https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 printf "Done , Please check any setting files yourself .\n"
 printf "Start your happy Coding life .\n"
+
+printf "Start Oh-My-Zsh install. \n"
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
